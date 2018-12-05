@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <meta charset="UTF_8">
+  <title>User Register Page</title>
+<style>
+.center {
+    margin: auto;
+    padding:40px 0;
+
+    width: 40%;
+    text-align: center;
+    border: 3px solid green;
+}
+.hidden{
+    visibility:hidden;
+}
+</style>
+<script type="text/javascript">
+function show(){
+
+var Type = document.getElementById("Type").value;
+
+if(Type=='1'){
+document.getElementById("Per_code").style.visibility="visible";
+}else{
+document.getElementById("Per_code").style.visibility="hidden";
+}}
+//}
+//else{
+//Per_code.style.visibility="hidden";
+//}
+
+</script>
+ </head>
+ <meta charset="UTF-8">
+ <body>
+<div class="center">
+ <a><p>User Register Page</p></a>
+<form name=form1 action="register1.php" method="POST">
+User name:   <input type="text" name="user_name" value=""/><br>
+Password:    <input type="password" name="password" value=""/><br>
+User type: <select  id="Type" name="type" onchange="show()">
+  <option name="type" value ="0">Student</option>
+  <option name="type" value ="1">Administrator</option>
+</select>
+<br>
+<a id="Per_code" class="hidden">Permission code:    <input  type="Per_code" name="Per_code" value=""/></a>
+<br>
+<input type="submit" value="register"/>
+<br>
+<input type='button' value='Return to login page' onclick=location.href='index.html'></input>
+</div>
+</body>
+</html>

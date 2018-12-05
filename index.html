@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+ <head>
+<title>Index page</title>
+<style>
+.center {
+    margin: auto;
+    padding:40px 0;
+
+    width: 40%;
+    text-align: center;
+    border: 4px solid black;
+}
+</style>
+
+<style type="text/css">
+body {background-color: #A2C0E4}
+h1 {background-color:#FFBCF7}
+h2 {background-color: transparent}
+p {background-color: #673EEE}
+
+</style>
+
+
+ </head>
+ <meta charset="UTF-8">
+ <body>
+<div class="center">
+ <a><p>User Login Page</p></a>
+<form action="login1.php" method="POST">
+User name:   <input type="text" name="user_name" value=""/><br>
+Password:    <input type="password" name="password" value=""/><br>
+User type: <select name="Type">
+  <option value ="0">Student</option>
+  <option value ="1">Administrator</option>
+</select>
+<br>
+<input type="submit" value="Login"/>
+<br>
+<input type='button' value='register new' onclick=location.href='register1.html'></input>
+</div> 
+</body>
+</html>
